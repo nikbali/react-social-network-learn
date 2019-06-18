@@ -1,0 +1,8 @@
+.toolbar {
+    background-color: #66bb6a;
+}
+
+.header {
+    grid-area: h;
+}
+
