@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const Post = () => {
+const Post = (props) => {
     const classes = useStyles();
     return (
                 <Grid item xs={12}>
@@ -28,15 +28,14 @@ const Post = () => {
 
                             <Grid item xs={1}>
                                 <SmallAvatarCustom
-                                    alt="Anastasia Dovgal"
-                                    src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/54349907_2279803208730880_1731448707410296832_n.jpg?_nc_cat=106&_nc_ht=scontent-arn2-1.xx&oh=5b13f9ae3045191a94656241b4cc0b8f&oe=5D816359"
-                                />
+                                    alt={props.user.name}
+                                    src={props.user.imageUrl} />
                             </Grid>
 
-                            <Grid item xs={2}>
-                                <div><b>Anastasia Dovgal</b></div>
-                                <div>20 июня 2019</div><p/>
-                                <div>Привет всем!</div>
+                            <Grid item xs={8}>
+                                <div><b>{props.user.name} </b></div>
+                                <div>{props.date} </div><p/>
+                                <div>{props.text} </div>
                             </Grid>
 
                             <IconButton className={classes.button} aria-label="Delete">
