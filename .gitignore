@@ -2,9 +2,14 @@
 
 # dependencies
 /node_modules
-/.idea
 /.pnp
 .pnp.js
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
 # testing
 /coverage

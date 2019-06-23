@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd4b22c7-e114-4e28-b7e5-b7dc6252a8d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/Store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/profile/information_profile/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/profile/information_profile/UserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/profile/wall/Wall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/profile/wall/Wall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/Store.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/content/profile/wall/Wall.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="735">
+              <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -77,14 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/redux/Store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-              <folding>
-                <element signature="e#47#1861#0" />
-              </folding>
+            <state relative-caret-position="465">
+              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -112,11 +103,11 @@
         <option value="$PROJECT_DIR$/src/components/content/messages/Messages.js" />
         <option value="$PROJECT_DIR$/src/components/content/profile/information_profile/UserInfo.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/redux/Store.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/App.module.css" />
         <option value="$PROJECT_DIR$/src/components/content/profile/Profile.js" />
         <option value="$PROJECT_DIR$/src/components/content/profile/wall/Wall.js" />
+        <option value="$PROJECT_DIR$/src/redux/Store.js" />
       </list>
     </option>
   </component>
@@ -148,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561304124398" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561311961225" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -208,7 +199,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560548594482</updated>
-      <workItem from="1560548600178" duration="48497000" />
+      <workItem from="1560548600178" duration="49295000" />
     </task>
     <task id="LOCAL-00001" summary="добавлена верстка страницы с профилем">
       <created>1560894474066</created>
@@ -231,11 +222,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561303746473</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавил рукописную версию Redux) + добавление поста на стену">
+      <created>1561311322758</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561311322758</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48497000" />
+    <option name="totallyTimeSpent" value="49295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -338,7 +336,8 @@
     <MESSAGE value="добавлена верстка страницы с профилем" />
     <MESSAGE value="добавил BrowserRouter + NavLink для перехода между страницами внутри контента" />
     <MESSAGE value="Рефакторинг. Вынес захардкоденые строки в объекты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Рефакторинг. Вынес захардкоденые строки в объекты" />
+    <MESSAGE value="Добавил рукописную версию Redux) + добавление поста на стену" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил рукописную версию Redux) + добавление поста на стену" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
@@ -538,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/Store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-          <folding>
-            <element signature="e#47#1861#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/content/profile/information_profile/UserInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -587,11 +576,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/content/profile/wall/Wall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        <state relative-caret-position="735">
+          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/Store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
         </state>
       </provider>
     </entry>
