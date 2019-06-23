@@ -8,17 +8,20 @@ import Wall from "./wall/Wall";
 const useStyles = makeStyles(theme => ({
     content: {
         gridArea: 'c',
-        padding: 10
+        paddingTop: theme.spacing(10),
+
     }
 }));
 
-const Profile = () => {
+const Profile = (props) => {
     const classes = useStyles();
     return (
         <div className={classes.content}>
             <Grid container spacing={2}>
-                <UserInfo/>
-                <Wall/>
+                <UserInfo currentUser={props.profilePage.currentUser}/>
+                <Wall posts={props.profilePage.posts}
+                      newPostText={props.profilePage.newPostText}
+                       dispatch = {props.dispatch} />
             </Grid>
         </div>
     );
