@@ -17,7 +17,7 @@ let Store = {
                         name:"Nikita Balily",
                         imageUrl:"https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/34367464_1882986928412512_8081072991393284096_n.jpg?_nc_cat=109&_nc_ht=scontent-frx5-1.xx&oh=2203d1c8f9c0cc086d5601bb71732983&oe=5D8BE22E"
                     },
-                    date:"20 июня 2019",
+                    date:"20 июня 2019 г., 17:41",
                     text:"Привет мам! Как у Вас дела? Зимой постараюсь прилететь к вам на каникулы с Олей"
                 },
                 {
@@ -26,7 +26,7 @@ let Store = {
                         name:"Olga Ananina",
                         imageUrl:"https://pp.userapi.com/c846522/v846522151/30751/KFxg8mTsRlk.jpg"
                     },
-                    date:"22 июня 2019",
+                    date:"22 июня 2019 г., 11:33",
                     text:"Привет, полюбому в гости зимой прилетим)"
                 },
                 {
@@ -35,7 +35,7 @@ let Store = {
                         name:"Lubov Dovgal",
                         imageUrl:"https://content.foto.my.mail.ru/mail/liubasha160245/_myphoto/i-5.jpg"
                     },
-                    date:"24 июня 2019",
+                    date:"23 июня 2019 г., 10:00",
                     text:"Привет Насть, я только с дачи приехала, устала как собака, клубники собрала три ведра, жаль Вас нет, кто ее есть то будет?"
                 }
             ]
@@ -54,13 +54,23 @@ let Store = {
      * Текст берется из this._state.profilePage.newPostText - текущее значение в поле
      */
     _addPost(){
+        let date = new Date();
+        let options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            timezone: 'UTC',
+            hour: 'numeric',
+            minute: 'numeric',
+        };
+
         let newPost = {
             id:"0",
             user:{
                 name: this.getCurrentUser().fullName,
                 imageUrl:this.getCurrentUser().imageUrl
             },
-            date:"24 июня 2019",
+            date:date.toLocaleString("ru", options) ,
             text: this._state.profilePage.newPostText
         };
         this._state.profilePage.posts.push(newPost);
