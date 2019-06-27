@@ -8,7 +8,11 @@ import Paper from "@material-ui/core/Paper";
 const useStyles = makeStyles(theme => ({
     paper: {
         padding: theme.spacing(3),
+
     },
+    secondaryText:{
+        color: theme.palette.text.secondary,
+    }
 }));
 
 
@@ -25,8 +29,8 @@ const UserInfo = (props) => {
                     <Grid item xs={3}>
                         <div><h3>{props.currentUser.fullName}</h3></div>
                         <p/>
-                        <div>{props.currentUser.age + " years"}</div>
-                        <div>{props.currentUser.profession}</div>
+                        <div className={classes.secondaryText}>{props.currentUser.age + " years"}</div>
+                        <div className={classes.secondaryText}>{props.currentUser.profession}</div>
                     </Grid>
                 </Grid>
             </Paper>

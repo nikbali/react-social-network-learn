@@ -1,13 +1,14 @@
 .grid{
 
     display: grid;
-    width: auto;
+
     grid-template-areas:
             "h h"
             "n c";
 
+    background-color: #edeef0;
     grid-template-rows: 0.1fr auto;
     grid-template-columns: 1fr 10fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 

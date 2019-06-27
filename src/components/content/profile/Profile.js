@@ -9,7 +9,9 @@ const useStyles = makeStyles(theme => ({
     content: {
         gridArea: 'c',
         paddingTop: theme.spacing(10),
-
+        paddingLeft: theme.spacing(3),
+        paddingRight: theme.spacing(3),
+        paddingBottom: theme.spacing(5),
     }
 }));
 

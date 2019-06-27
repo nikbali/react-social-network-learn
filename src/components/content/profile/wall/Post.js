@@ -14,6 +14,9 @@ const useStyles = makeStyles(theme => ({
     button: {
         margin: theme.spacing(3),
     },
+    secondaryText:{
+        color: theme.palette.text.secondary,
+    },
     input: {
         display: 'none',
     },
@@ -34,7 +37,7 @@ const Post = (props) => {
 
                             <Grid item xs={8}>
                                 <div><b>{props.user.name} </b></div>
-                                <div>{props.date} </div><p/>
+                                <div   className={classes.secondaryText}>{props.date} </div><p/>
                                 <div>{props.text} </div>
                             </Grid>
 
