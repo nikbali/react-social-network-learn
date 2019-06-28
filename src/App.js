@@ -19,7 +19,7 @@ const App = (props) => {
                             dispatch={props.dispatch}/>
         }
         />
-          <Route path="/messages" render={(props) => <Messages/>}/>
+          <Route path="/messages" render={(props) => <Messages selectUserId={1}/>}/>
           <Route path="/news" render={(props) => <News/>}/>
           <Route path="/friends" render={(props) => <Friends/>}/>
     </div>

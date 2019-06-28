@@ -1,36 +1,32 @@
+import Grid from  "@material-ui/core/Grid"
 import React from 'react'
 import {makeStyles} from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
 import {SmallAvatarCustom} from "../profile/information_profile/AvatarCustom";
 import Typography from "@material-ui/core/Typography";
-import {Link, NavLink} from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
-    usernameText: {
+    messageText: {
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
 }));
 
-const User = (props) => {
+const Message = (props) => {
+
     const classes = useStyles();
     return (
-
         <Grid container spacing={0.1}>
             <SmallAvatarCustom
                 alt={props.user.name}
                 src={props.user.imageUrl}/>
 
-            <NavLink to={"/messages/" + props.user.id}>
-                <Typography className={classes.usernameText} gutterBottom variant="body2" >
-                    {props.user.name}
-                </Typography>
-           </NavLink>
-
-
+            <Typography className={classes.messageText} gutterBottom variant="body2" >
+                {props.messageText}
+            </Typography>
         </Grid>
     );
-};
+}
 
-export default User;
+export default Message;
