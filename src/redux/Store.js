@@ -4,10 +4,11 @@ let Store = {
             newPostText: 'Do you have some new?',
 
             currentUser : {
+                isLogin:false,
                 fullName:"Anastasia Dovgal",
                 age:"43",
                 profession:"Photographer",
-                imageUrl:"https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/54349907_2279803208730880_1731448707410296832_n.jpg?_nc_cat=106&_nc_ht=scontent-arn2-1.xx&oh=5b13f9ae3045191a94656241b4cc0b8f&oe=5D816359"
+                imageUrl:"https://www.gravatar.com/avatar/b8afc3196cf6da4f11f50e7c7cf8a834?s=328&d=identicon&r=PG"
             },
 
             posts: [
@@ -87,6 +88,11 @@ let Store = {
         this._reRenderDOM(this._state);
     },
 
+    _setIsLogin(){
+        this._state.profilePage.currentUser.isLogin = true;
+        this._reRenderDOM(this._state);
+    },
+
     /**
      * Метод подписывает объект, который выполняет перерисовку дерева, в нашем случае в index.js
      * @param subscriber ссылка на метод, который перерисоввывает DOM
@@ -116,6 +122,8 @@ let Store = {
 
         } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
             this._updateNewPostText(action.newText);
+        }else if (action.type === 'LOGIN') {
+            this._setIsLogin();
         }
     }
 };
