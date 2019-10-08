@@ -64,11 +64,11 @@ const profileReducer = (state = initialState, action) => {
             let newPost = {
                 id:"0",
                 user:{
-                    name: this.getCurrentUser().fullName,
-                    imageUrl:this.getCurrentUser().imageUrl
+                    name: state.currentUser.fullName,
+                    imageUrl:state.currentUser.imageUrl
                 },
                 date:date.toLocaleString("ru", options) ,
-                text: this._state.profilePage.newPostText
+                text: state.newPostText
             };
             state.posts.push(newPost);
             state.newPostText = '';
@@ -86,7 +86,7 @@ const profileReducer = (state = initialState, action) => {
             return state;
 
     }
-}
+};
 
 export const addPostActionCreator = () => {
     return (
@@ -103,7 +103,7 @@ export const updateNewPostTextActionCreator = (text) => {
             newText: text
         }
     );
-}
+};
 
 export const loginActionCreator = () => {
     return (
