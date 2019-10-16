@@ -11,7 +11,9 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
-    "typeface-roboto": "0.0.54"
+    "typeface-roboto": "0.0.54",
+    "prop-types": "latest",
+    "clsx": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

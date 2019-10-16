@@ -7,14 +7,6 @@ let initialState = {
    
             newPostText: 'Do you have some new?',
 
-            currentUser : {
-                isLogin:false,
-                fullName:"Anastasia Dovgal",
-                age:"43",
-                profession:"Photographer",
-                imageUrl:"https://www.gravatar.com/avatar/b8afc3196cf6da4f11f50e7c7cf8a834?s=328&d=identicon&r=PG"
-            },
-
             posts: [
                 {
                     id:"1",
@@ -102,12 +94,6 @@ export const updateNewPostTextActionCreator = (text) => {
             type: UPDATE_NEW_POST_TEXT,
             newText: text
         }
-    );
-};
-
-export const loginActionCreator = () => {
-    return (
-        {type: LOGIN}
     );
 };
 

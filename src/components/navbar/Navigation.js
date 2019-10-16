@@ -39,7 +39,7 @@ const Navigation = () => {
                 className={classes.drawer}
                 variant="permanent"
             >
-                <div className={c.toolbar} />
+                <div  />
                 <List>
                     {menu.map((menu_item) => (
 
