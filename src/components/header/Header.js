@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
@@ -37,11 +36,16 @@ const styles = theme => ({
 const Header = (props) => {
     const { classes } = props;
 
+    const logout = () => {
+        debugger;
+        props.logout();
+    };
+
     return (
         <div>
             <AppBar position="fixed">
                 <Toolbar className={classes.toolbar}>
-                    <div className={classes.left} />
+
                     <Link
                         variant="h6"
                         underline="none"
@@ -50,21 +54,16 @@ const Header = (props) => {
 
                         {'one_mudak'}
                     </Link>
+
                     <div className={classes.right}>
                         <Link
+                            to="/signup"
                             color="inherit"
                             variant="h6"
-                            underline="none"
                             className={classes.rightLink}
+                            onClick={logout}
                         >
-                            {'Sign In'}
-                        </Link>
-                        <Link
-                            variant="h6"
-                            underline="none"
-                            className={clsx(classes.rightLink, classes.linkSecondary)}
-                        >
-                            {'Sign Up'}
+                            {'Logout'}
                         </Link>
                     </div>
                 </Toolbar>
@@ -74,8 +73,5 @@ const Header = (props) => {
     );
 };
 
-Header.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
 
 export default withStyles(styles)(Header);

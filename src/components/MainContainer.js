@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
-import Login from "./Login";
-import {loginActionCreator} from "../../redux/currentUserReducer";
+import Main from "./Main";
+import {loginActionCreator} from "../redux/currentUserReducer";
 
 
 let mapDispatchToProps = (dispatch) => {
@@ -18,4 +18,4 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(Main);

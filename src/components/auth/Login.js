@@ -12,26 +12,14 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-
-function Copyright() {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
-                Your Website
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
+import {Redirect} from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
     root: {
         height: '100vh',
     },
     image: {
-        backgroundImage: 'url(https://source.unsplash.com/random)',
+        backgroundColor: theme.palette.primary.main,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -47,7 +35,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.secondary.main,
     },
     form: {
-        width: '100%', // Fix IE 11 issue.
+        width: '100%',
         marginTop: theme.spacing(1),
     },
     submit: {
@@ -65,6 +53,9 @@ const Login = (props) => {
     let onClickSignIn = () => {
         debugger;
         props.auth();
+        return (
+            <Redirect to="/main/profile"/>
+        );
     };
 
 
@@ -116,21 +107,7 @@ const Login = (props) => {
                         >
                             Sign In
                         </Button>
-                        <Grid container>
-                            <Grid item xs>
-                                <Link href="#" variant="body2">
-                                    Forgot password?
-                                </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link href="#" variant="body2">
-                                    {"Don't have an account? Sign Up"}
-                                </Link>
-                            </Grid>
-                        </Grid>
-                        <Box mt={5}>
-                            <Copyright />
-                        </Box>
+
                     </form>
                 </div>
             </Grid>

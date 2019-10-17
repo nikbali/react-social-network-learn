@@ -70,10 +70,6 @@ const profileReducer = (state = initialState, action) => {
             state.newPostText = action.newText;
             return state;
 
-        case LOGIN:
-            state.currentUser.isLogin = true;
-            return state;
-
         default:
             return state;
 
