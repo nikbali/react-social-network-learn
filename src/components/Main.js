@@ -10,14 +10,6 @@ import NotFound from "./NotFound";
 
 const Main = (props) => {
 
-    let isLogin = props.currentUser.isLogin;
-
-    if (!isLogin) {
-        return (
-            <Redirect to="/login"/>
-        );
-    }
-
     return (
         <div className={classes.grid}>
             <HeaderContainer/>
